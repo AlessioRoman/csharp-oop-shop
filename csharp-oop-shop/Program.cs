@@ -2,9 +2,6 @@
 using linkedlist;
 
 LinkedList myList = new LinkedList();
-myList.InsertLast(myList, "Ciao", "Mario", 20);
-myList.InsertLast(myList, "Ciao", "Mario", 22);
-myList.InsertLast(myList, "Ciao", "Mario", 245);
 
 Console.WriteLine("Ciao quanti prodotti vuoi inserire?");
 int numberOfProducts = int.Parse(Console.ReadLine());

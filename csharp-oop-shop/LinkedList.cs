@@ -43,7 +43,7 @@ namespace linkedlist
         internal void printList(LinkedList myList)
         {
             Item temp = myList.head;
-            while (temp.next != null)
+            for (int i = 0; i < listSize(myList); i++)
             {
                 Console.WriteLine("--------------------------------");
                 Console.WriteLine("Full name: " + temp.getFullName());
@@ -55,5 +55,16 @@ namespace linkedlist
                 temp = temp.next;
             }
         }
+        internal int listSize(LinkedList myList)
+        {
+            int size = 1;
+            Item temp = myList.head;
+            while (temp.next != null) 
+            { 
+                size += 1;
+                temp = temp.next;
+            }
+            return size;
+        } 
     }
 }
